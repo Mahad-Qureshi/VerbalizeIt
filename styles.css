@@ -104,6 +104,9 @@ header .maxWidthContainer {
 /* Header End */
 
 /* Mobile Menu Start */
+.mobile-container{
+    display: none;
+}
 .topnav {
     overflow: hidden;
     background-color: #ffce31;
@@ -267,6 +270,9 @@ footer {
 
 /* Footer End */
 @media screen and (max-width: 768px) {
+    .mobile-container{
+        display: unset;
+    }
     .mobileMenu {
         display: none;
     }
