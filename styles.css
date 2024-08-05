@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+    color: #000000;
+}
+
+h2 {
+    color: #000000;
+    font-size: 45px;
+}
+
+h3 {
+    font-size: 35px;
+    color: #000000;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 17px;
+    color: #000000;
+}
+
+button {
+    background-color: #FFCE31;
+    color: #000000;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+    padding: 12px 30px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+
+.maxWidthContainer {
+    max-width: 1280px;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+}
+
+.paddingAllSides {
+    padding: 75px 15px;
+}
+
+.flexContainer1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.flexContainer2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.flexColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.column {
+    width: 50%;
+}
+
+/* Header Start */
+.logo {
+    width: 150px;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    padding: 0px 15px;
+}
+
+header .maxWidthContainer {
+    border-bottom: 1px solid #A8A8A8;
+    padding: 15px;
+}
+
+/* Header End */
+
+/* Mobile Menu Start */
+.topnav {
+    overflow: hidden;
+    background-color: #ffce31;
+    position: relative;
+    padding: 30px 15px;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+#myLinks a {
+    color: #000;
+    font-weight: 600;
+    border-bottom: 1px solid #0000003d;
+}
+
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    background-color: #000;
+    border-radius: 10px;
+}
+.mobLog{
+    width: 30%;
+}
+
+/* Mobile Menu End */
+
+/* Hero Start */
+.heroColumn1 {
+    padding: 0px 75px 0px 20px;
+}
+
+.mail {
+    width: 100%;
+}
+
+input[type="email"] {
+    width: 65%;
+    padding: 11px 30px;
+    border-radius: 25px;
+    background-color: #F5F5F5;
+    border: none;
+    outline: none;
+}
+
+.heropic {
+    width: 25%;
+}
+
+.herologos {
+    width: 50%;
+}
+
+.FeatureCol {
+    padding-left: 175px;
+}
+
+.Feature .column {
+    align-self: flex-start;
+}
+
+.FeatureRow .column {
+    background-color: #FFF0BF;
+    border-radius: 25px;
+    text-align: center;
+    padding: 50px 50px 0px 50px;
+}
+
+.FeatureRow {
+    gap: 50px;
+    margin-top: 25px;
+}
+
+.FeatureRow .column img {
+    width: 70%;
+}
+
+/* Hero End */
+
+/* Services Area Start */
+.servicesArea {
+    text-align: center;
+}
+
+.mapImg {
+    /* width: 90%; */
+    margin-top: 50px;
+}
+
+.servicesArea h1 {
+    font-size: 80px;
+}
+
+/* Services Area End */
+
+/* CTA Start */
+.CTA {
+    background-color: #FFCE31;
+    padding: 150px 15px;
+}
+
+.CTAContent {
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.playbtns {
+    width: 50%;
+}
+
+/* CTA End */
+
+/* Footer Start */
+.footerCol1 {
+    width: 25%;
+    align-self: flex-start;
+    align-items: flex-start;
+}
+
+.footerCol1 img {
+    width: 45%;
+}
+
+.footerCol2 {
+    width: 75%;
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+.footerCol2 .flexColumn {
+    gap: 40px;
+    align-items: start;
+}
+
+.footerRow1 {
+    border-bottom: 1px solid #000;
+    padding-bottom: 50px;
+}
+
+.footerRow2 {
+    padding: 15px 0px;
+    text-align: center;
+}
+
+footer {
+    padding: 75px 15px 15px 15px;
+}
+
+/* Footer End */
+@media screen and (max-width: 768px) {
+    .mobileMenu {
+        display: none;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    .servicesArea h1 {
+        font-size: 50px;
+    }
+
+    .heroColumn1 {
+        padding: 0px;
+    }
+
+    input[type="email"] {
+        width: 53%;
+    }
+
+    .FeatureCol {
+        padding-left: 75px;
+    }
+
+    .FeatureRow {
+        gap: 20px;
+    }
+
+    .CTAContent {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flexContainer1 {
+        flex-direction: column;
+    }
+
+    .column,
+    .herologos,
+    .footerCol1,
+    .footerCol2 {
+        width: 100%;
+    }
+
+    .mail {
+        flex-direction: row;
+        gap: 0;
+    }
+
+    input[type="email"] {
+        width: 62%;
+    }
+
+    .clientLogo {
+        padding: 15px;
+    }
+
+    .heropic {
+        width: 50%;
+    }
+
+    .FeatureCol {
+        padding: 0;
+    }
+
+    .CTAContent h1 {
+        font-size: 40px;
+    }
+
+    .playbtns {
+        width: 80%;
+    }
+
+    .footerCol2 {
+        gap: 20px;
+        justify-content: flex-start;
+    }
+}
